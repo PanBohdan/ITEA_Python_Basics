@@ -1,5 +1,5 @@
+import random
 if __name__ == '__main__':
-    import random
     print('Input lowest ran number')
     inp1 = int(input())
     print('Input highest ran number')
