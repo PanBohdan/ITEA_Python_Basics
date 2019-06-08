@@ -1,9 +1,9 @@
 if __name__ == '__main__':
     import math
-    sqrnotrdy=float(input('Enter number '))
-    sqr=math.sqrt(sqrnotrdy)
-    print('Square root of ', sqrnotrdy, ' is ', sqr)
+    sqr_not_ready = float(input('Enter number '))
+    sqr = math.sqrt(sqr_not_ready)
+    print('Square root of ', sqr_not_ready, ' is ', sqr)
     while sqr > 10:
-        sqrnotrdy = float(input('Enter number '))
-        sqr = math.sqrt(sqrnotrdy)
-        print('Square root of ',sqrnotrdy, ' is ',sqr)
+        sqr_not_ready = float(input('Enter number '))
+        sqr = math.sqrt(sqr_not_ready)
+        print('Square root of ', sqr_not_ready, ' is ', sqr)

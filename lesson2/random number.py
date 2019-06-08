@@ -4,5 +4,8 @@ if __name__ == '__main__':
     inp1 = int(input())
     print('Input highest ran number')
     inp2 = int(input())
-    num = random.randint(inp1,inp2)
-    print(num)
+    if inp1 < inp2:
+        num = random.randint(inp1, inp2)
+        print(num)
+    else:
+        print('Error: first number is larger than second')
