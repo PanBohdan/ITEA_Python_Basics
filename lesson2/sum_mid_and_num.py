@@ -1,5 +1,4 @@
 if __name__ == '__main__':
-
     sum = 0
     i = float(input('Input number end press Enter: '))
     counter = 0
