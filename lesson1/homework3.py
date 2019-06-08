@@ -1,3 +1,3 @@
 if __name__ == '__main__':
-    strn='Hello world loool'
-    print(strn.count('o'))
+    string = 'Hello world loool'
+    print(string.count('o'))
