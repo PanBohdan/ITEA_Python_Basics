@@ -3,4 +3,4 @@ if __name__ == '__main__':
     while i <= 20:
         if i % 2 == 0:
            print(i, end=' ')
-        i += 2
+        i += 1
