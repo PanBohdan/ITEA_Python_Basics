@@ -4,6 +4,5 @@ if __name__ == '__main__':
     i = 1
     num = 1
     for i in range(n):
-        num = num*x
-        i += 1
+        num = num * x
     print(num, ' is a', x, '^', n)

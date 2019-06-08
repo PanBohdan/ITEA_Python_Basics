@@ -8,6 +8,5 @@ if __name__ == '__main__':
                 break
         else:
             print(inp, ' is not a prime number')
-
     else:
         print(inp, ' is not a prime number')
