@@ -1,2 +1,2 @@
 if __name__ == '__main__':
-    print('Pyhon ' * 100)
+    print('Python ' * 100)
