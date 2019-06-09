@@ -1,3 +1,4 @@
+# print n Fibonacci numbers
 if __name__ == '__main__':
     fib = [0]
     i = 0

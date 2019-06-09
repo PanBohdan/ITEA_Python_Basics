@@ -1,3 +1,4 @@
+# print sum of input
 if __name__ == '__main__':
     sum = 0
     print('Enter numbers that you want to add in one line dividing them with spaces')

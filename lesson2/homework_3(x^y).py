@@ -1,8 +1,8 @@
+# Exponentiation with cycle
 if __name__ == '__main__':
     x = 25
-    n = 5
-    i = 1
+    power_of = 5
     num = 1
-    for i in range(n):
+    for i in range(power_of):
         num = num * x
-    print(num, ' is a', x, '^', n)
+    print(num, ' is a', x, '^', power_of)

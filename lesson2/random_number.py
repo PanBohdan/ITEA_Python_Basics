@@ -1,3 +1,4 @@
+# print random number in the range that user inputs
 import random
 if __name__ == '__main__':
     print('Input lowest ran number')

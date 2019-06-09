@@ -1,3 +1,4 @@
+# print until uppercase letter
 if __name__ == '__main__':
     data = 'o hello There'
     for i in data:

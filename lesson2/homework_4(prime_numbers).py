@@ -1,3 +1,4 @@
+# print is inp a prime number
 import math
 if __name__ == '__main__':
     inp = int(input('Enter number:'))
