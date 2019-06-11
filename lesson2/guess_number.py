@@ -8,10 +8,10 @@ def guess_the_number_game():
     while guessed_number != num:
 
         if num > guessed_number:
-            print('Pick higher number. Your was to low')
+            print('Pick higher number. Your number was to low')
             guessed_number = int(input('Enter the number from 0 to 100: '))
         elif num < guessed_number:
-            print('Pick lower number. Your was to high')
+            print('Pick lower number. Your number was to high')
             guessed_number = int(input('Enter the number from 0 to 100: '))
         else:
             break
