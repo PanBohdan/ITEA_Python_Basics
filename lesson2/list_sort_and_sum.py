@@ -6,14 +6,14 @@ def sort(x):
 def sum_of_num(x):
     temp_list = []
     for i in x:
-        sum = 0
+        sum_of_numbers = 0
         for y in str(i):
-            sum += int(y)
-        temp_list.append(sum)
+            sum_of_numbers += int(y)
+        temp_list.append(sum_of_numbers)
     return temp_list
 
 
 if __name__ == "__main__":
-    list = [125, 22, 51, 41, 625, 123, 1]
-    print(sort(list))
-    print('Sum of numbers in numbers is:', sum_of_num(list))
+    input_list = [125, 22, 51, 41, 625, 123, 1]
+    print(sort(input_list))
+    print('Sum of numbers in numbers is:', sum_of_num(input_list))

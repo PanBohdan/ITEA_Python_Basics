@@ -1,10 +1,10 @@
 def mid(x):
-    sum = 0
+    sum_of_num = 0
     quantity = 0
     for i in x:
-        sum += int(i)
+        sum_of_num += int(i)
         quantity += 1
-    return sum/quantity
+    return sum_of_num/quantity
 
 
 if __name__ == "__main__":
