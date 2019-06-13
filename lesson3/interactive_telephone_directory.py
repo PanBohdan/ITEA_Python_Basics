@@ -1,4 +1,4 @@
-def telephone_directory(telephone_list, done):
+def telephone_directory(telephone_list):
     print('Please select what you want to do: \n 1-Add phone and name to the book')
     print(' 2-Search phone by name or name by phone \n 3-Remove name and phone \n 4-Redact phone and name')
     print(' 5-Check how many phone numbers have three or more same numbers in a row \n 6-Stop the program')
@@ -11,27 +11,27 @@ def telephone_directory(telephone_list, done):
         elif inp == 1:  # Adding number and phone
             inp = input('Input phone and name ')
             telephone_list.append(inp)
-            telephone_directory(telephone_list, 0)
+            telephone_directory(telephone_list)
 
         elif inp == 2:  # searching name by phone or phone by name
             search_phone_and_number(telephone_list)
-            telephone_directory(telephone_list, 0)
+            telephone_directory(telephone_list)
 
         elif inp == 3:  # removing phone and name by phone or name
             remove_phone_and_name(telephone_list)
-            telephone_directory(telephone_list, 0)
+            telephone_directory(telephone_list)
 
         elif inp == 4:  # changing phone and name
             change_phone_and_name(telephone_list)
-            telephone_directory(telephone_list, 0)
+            telephone_directory(telephone_list)
 
         elif inp == 5:  # searching how many phones have three numbers in a row
             three_numbers_in_a_row(telephone_list)
-            telephone_directory(telephone_list, 0)
+            telephone_directory(telephone_list)
 
     else:
         print('Error! Please try again. Number must be integer. (And number must be number, not a name)\n')
-        telephone_directory(telephone_list, 0)
+        telephone_directory(telephone_list)
 
 
 def remove_phone_and_name(x):
@@ -90,4 +90,4 @@ def search_phone_and_number(x):
 
 
 if __name__ == '__main__':
-    telephone_directory([], 0)
+    telephone_directory([])
