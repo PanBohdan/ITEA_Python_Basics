@@ -8,4 +8,3 @@ if __name__ == '__main__':
 
             print(i*i, end=' ')
             print('is', i, '^2')
-
