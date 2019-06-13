@@ -19,7 +19,7 @@ if __name__ == '__main__':
     l2 = len(matrix)
     j2 = 0
     for i in range(l2):  # sum of other diagonal
-        sum_of_diagonal_reversed += matrix[i][j2]
+        sum_of_diagonal_reversed += matrix[i][i]
         j2 += 1
     print(sum_of_diagonal_reversed)
     print(sum_of_diagonal+sum_of_diagonal_reversed)
