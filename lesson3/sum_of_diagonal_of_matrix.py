@@ -9,7 +9,7 @@ if __name__ == '__main__':
     l1 = len(matrix)
     j1 = 0
     for i in range(l1):  # sum of diagonal
-        sum_of_diagonal += matrix[i][j1]
+        sum_of_diagonal += matrix[i][i]
         j1 += 1
     print(sum_of_diagonal)
 
