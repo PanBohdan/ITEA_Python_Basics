@@ -11,17 +11,14 @@ def guess_the_number_game():
             guessed_number = int(guessed_number)
             if num > guessed_number:
                 print('Pick higher number. Your number was to low \n')
-                continue
 
             elif num < guessed_number:
                 print('Pick lower number. Your number was to high \n')
-                continue
 
             else:
                 break
         else:
             print('Error! Please try again. \n')
-            continue
     print('You won! Your number was', num)
 
 
