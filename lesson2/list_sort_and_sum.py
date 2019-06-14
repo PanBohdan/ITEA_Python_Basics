@@ -15,5 +15,6 @@ def sum_of_num(x):
 
 if __name__ == "__main__":
     input_list = [125, 22, 51, 41, 625, 123, 1]
-    print(sort(input_list))
-    print('Sum of numbers in numbers is:', sum_of_num(input_list))
+    print(input_list, 'Unsorted list')
+    print(sort(input_list), 'Sorted list')
+    print('Sum of numbers in numbers in list is:', sum_of_num(input_list))
