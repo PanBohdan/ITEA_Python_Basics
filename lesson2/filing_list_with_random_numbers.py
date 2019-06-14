@@ -13,7 +13,7 @@ def random_numbers_list(start, end):
 
 
 if __name__ == "__main__":
-    print('Input lowest ran number')
+    print('Input lowest random number')
     inp_min = int(input())
     print('Input highest ran number')
     inp_max = int(input())
