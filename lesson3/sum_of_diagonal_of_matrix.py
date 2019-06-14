@@ -6,16 +6,16 @@ if __name__ == '__main__':
               [2, -25, -1, 5, 2]]
 
     sum_of_diagonal = 0
-    l1 = len(matrix)
-    for i in range(l1):  # sum of diagonal
+    length = len(matrix)
+    for i in range(length):  # sum of diagonal
         sum_of_diagonal += matrix[i][i]
     print(sum_of_diagonal)
 
     matrix.reverse()
 
     sum_of_diagonal_reversed = 0
-    l2 = len(matrix)
-    for i in range(l2):  # sum of other diagonal
+    for i in range(length):  # sum of other diagonal
         sum_of_diagonal_reversed += matrix[i][i]
+
     print(sum_of_diagonal_reversed)
     print(sum_of_diagonal+sum_of_diagonal_reversed)
