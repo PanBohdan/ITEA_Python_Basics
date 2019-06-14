@@ -26,7 +26,7 @@ def telephone_directory(telephone_list):
             telephone_directory(telephone_list)
 
         elif inp == 5:  # searching how many phones have three numbers in a row
-            three_numbers_in_a_row(telephone_list)
+            print(three_numbers_in_a_row(telephone_list))
             telephone_directory(telephone_list)
 
     else:
@@ -77,7 +77,7 @@ def three_numbers_in_a_row(x):
                 same_numbers_counter += 1
                 break
 
-    print(same_numbers_counter)
+    return same_numbers_counter
 
 
 def search_phone_and_number(x):
