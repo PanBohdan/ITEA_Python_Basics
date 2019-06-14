@@ -11,4 +11,3 @@ if __name__ == '__main__':
         sum_of_nums_in_num += number % 10
         number = number // 10
     print(sum_of_nums_in_num)
-
