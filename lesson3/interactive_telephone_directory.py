@@ -45,7 +45,6 @@ def remove_phone_and_name(x):
                 print('Successfully removed!')
             elif inp_yes_or_no == 'N':
                 print('Ok. Please try again')
-                continue
             else:
                 print('Error! You entered wrong letter or number.')
                 break
