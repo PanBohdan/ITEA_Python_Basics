@@ -1,3 +1,14 @@
+def sum_every_third_number(inp, num_of_line):
+    sum_of_nums = 0
+    for i1 in range(num_of_line, len(inp), 3):
+        if i1 != len(inp)-(3-num_of_line):
+            print(inp[i1], end=' + ')
+        else:
+            print(inp[i1], end=' = ')
+        sum_of_nums += inp[i1]
+    return sum_of_nums
+
+
 if __name__ == '__main__':
     data = """
     0.00002640
@@ -17,35 +28,11 @@ if __name__ == '__main__':
     1.50348550
     """
 
-    sum_of_nums = 0
     data = data.split('\n')
     data.remove('')
     data.remove('    ')
     for i in range(len(data)):
         data[i] = float(data[i])
-
-    for i in range(0, len(data), 3):
-        if i != len(data)-3:
-            print(data[i], end=' + ')
-        else:
-            print(data[i], end=' = ')
-        sum_of_nums += data[i]
-    print(sum_of_nums)
-
-    sum_of_nums = 0
-    for i in range(1, len(data), 3):
-        if i != len(data)-2:
-            print(data[i], end=' + ')
-        else:
-            print(data[i], end=' = ')
-        sum_of_nums += data[i]
-    print(sum_of_nums)
-
-    sum_of_nums = 0
-    for i in range(2, len(data), 3):
-        if i != len(data)-1:
-            print(data[i], end=' + ')
-        else:
-            print(data[i], end=' = ')
-        sum_of_nums += data[i]
-    print(sum_of_nums)
+    print(sum_every_third_number(data, 0))
+    print(sum_every_third_number(data, 1))
+    print(sum_every_third_number(data, 2))

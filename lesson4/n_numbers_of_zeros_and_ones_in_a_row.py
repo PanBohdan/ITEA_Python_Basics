@@ -21,17 +21,17 @@ def number_of_zeros_and_ones_in_a_row(n):
     list_of_counters_of_numbers_in_a_row.sort()
     list_of_counters_of_numbers_in_a_row.reverse()
     # print(list_of_counters_of_numbers_in_a_row) # for testing
-    print(list_of_counters_of_numbers_in_a_row[0])
+    return list_of_counters_of_numbers_in_a_row[0]
 
 
-def input_function():
+def menu_function():
     n = input('Enter how many zeros and ones you want:')
     if n.isdigit():
-        number_of_zeros_and_ones_in_a_row(int(n))
+        print('There is', number_of_zeros_and_ones_in_a_row(int(n)), 'numbers in a row')
     else:
         print('Error number must be integer!')
-        input_function()
+        menu_function()
 
 
 if __name__ == '__main__':
-    input_function()  # max number in 1 second is 900000
+    menu_function()  # max number in 1 second is 800000
