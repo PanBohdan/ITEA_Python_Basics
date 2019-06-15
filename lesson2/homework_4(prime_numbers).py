@@ -22,4 +22,4 @@ if __name__ == '__main__':
             print('Number is not prime')
 
     else:
-        print('Error')
+        print('Error. Number must be natural')
