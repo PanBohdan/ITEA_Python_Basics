@@ -1,7 +1,7 @@
 import random
 
 
-def random_numbers_list(start, end):
+def create_list_with_random_numbers(start, end):
     list1 = []
     num_of_numbers = int(input('Input how many random numbers you want:'))
     if num_of_numbers >= 1:
@@ -18,6 +18,6 @@ if __name__ == "__main__":
     print('Input highest ran number')
     inp_max = int(input())
     if inp_min <= inp_max:
-        print(random_numbers_list(inp_min, inp_max))
+        print(create_list_with_random_numbers(inp_min, inp_max))
     else:
         print('Error: first number is larger than second')
