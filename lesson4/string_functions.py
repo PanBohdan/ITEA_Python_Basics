@@ -65,8 +65,7 @@ def replace(inp_data, what_to_replace, replace_with):
             elif inp_data[index+i] != j:
                 index = 0
                 break
-
-    print(new_data)
+    return new_data
 
 
 if __name__ == '__main__':
