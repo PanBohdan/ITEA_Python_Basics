@@ -58,7 +58,8 @@ def replace(inp_data, what_to_replace, replace_with):
                             if k < final_destination:
                                 temp_list[temp_index+k-1] = replace_with[k]
                             elif k >= final_destination:
-                                temp_list.insert(k+temp_index-1, replace_with[k])
+                                temp_list.insert(k+temp_index-1,
+                                                 replace_with[k])
                         for temp in temp_list:
                             new_data += temp
                         return new_data
