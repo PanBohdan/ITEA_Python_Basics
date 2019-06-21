@@ -1,6 +1,6 @@
 def insert(inp_list, inp_index, inp_str):
     inp_list = inp_list + ['temp']
-    if inp_index >= len(inp_list)-1:  # for indexes that larger than length of input list
+    if inp_index >= len(inp_list)-1:  # for indexes that larger than len of inp list
         inp_list[len(inp_list)-1] = inp_str  # insert at last index of list
         return inp_list
 
@@ -17,8 +17,10 @@ def insert(inp_list, inp_index, inp_str):
         inp_list[i+1] = temp_temp
         return inp_list
 
-    if -inp_index >= len(inp_list)-1:   # for negative indexes that larger then length of input list
-        for i in range(len(inp_list)-1):  # moving back in cycle of length of input list
+    # for negative indexes that larger then length of input list
+    if -inp_index >= len(inp_list)-1:
+        # moving back in cycle of length of input list
+        for i in range(len(inp_list)-1):
             if i == 0:  # inserting at the index of beginning
                 temp = inp_list[i]
                 inp_list[i] = inp_str
@@ -59,7 +61,8 @@ def remove(inp_list, inp_str):
 
 
 if __name__ == '__main__':
-    list1 = ['Hello', 'Max', 'and', 'How do you guys feel today?', 'Fine?', 'Ok', 'Bye.']
+    list1 = ['Hello', 'Max', 'and', 'How do you guys feel today?',
+             'Fine?', 'Ok', 'Bye.']
     list1 = insert(list1, 3, 'Victor')
     print(list1)
 
