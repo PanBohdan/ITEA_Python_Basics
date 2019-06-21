@@ -1,7 +1,10 @@
 def telephone_directory(telephone_list):
-    print('Please select what you want to do: \n 1-Add phone and name to the book')
-    print(' 2-Search phone by name or name by phone \n 3-Remove name and phone \n 4-Redact phone and name')
-    print(' 5-Check how many phone numbers have three or more same numbers in a row \n 6-Stop the program')
+    print('Please select what you want to do: \n '
+          '1-Add phone and name to the book')
+    print(' 2-Search phone by name or name by phone \n '
+          '3-Remove name and phone \n 4-Redact phone and name')
+    print(' 5-Check how many phone numbers have three or '
+          'more same numbers in a row \n 6-Stop the program')
     inp = input(' ')
 
     if inp.isdigit():
@@ -30,7 +33,8 @@ def telephone_directory(telephone_list):
             telephone_directory(telephone_list)
 
     else:
-        print('Error! Please try again. Number must be integer. (And number must be number, not a name)\n')
+        print('Error! Please try again. Number must be integer. '
+              '(And number must be number, not a name)\n')
         telephone_directory(telephone_list)
 
 
