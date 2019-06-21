@@ -2,7 +2,8 @@ import random
 
 
 def guess_the_number_game():
-    print('Lets play a game "guess that number"! Computer will generate random number and your task is to guess it.')
+    print('Lets play a game "guess that number"! '
+          'Computer will generate random number and your task is to guess it.')
     num = random.randint(0, 100)
     guessed_number = ''
     while guessed_number != num:

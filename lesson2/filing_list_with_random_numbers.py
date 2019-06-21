@@ -9,7 +9,8 @@ def create_list_with_random_numbers(start, end):
             list1.append(random.randint(start, end))
         return list1
     else:
-        print('You entered negative number or zero. Please try again but with positive number')
+        print('You entered negative number or zero. '
+              'Please try again but with positive number')
 
 
 if __name__ == "__main__":
