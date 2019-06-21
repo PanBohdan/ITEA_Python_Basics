@@ -42,7 +42,8 @@ def remove_phone_and_name(x):
     inp = input('Enter phone or name you want to remove ')
     for i in x:
         if i.find(inp) >= 0:
-            print('Do you want this phone and name to be removed? -', i, ' Y-Yes, N-No')
+            print('Do you want this phone and name to be removed? -',
+                  i, ' Y-Yes, N-No')
             inp_yes_or_no = input()
             if inp_yes_or_no == 'Y':
                 x.remove(i)
@@ -58,7 +59,8 @@ def change_phone_and_name(x):
     inp = input('Enter phone or name you want to change ')
     for i in x:
         if i.find(inp) >= 0:
-            print('Do you want this phone and name to be changed? -', i, ' Y-Yes, N-No')
+            print('Do you want this phone and name to be changed? -',
+                  i, ' Y-Yes, N-No')
             inp_yes_or_no = input()
             if inp_yes_or_no == 'Y':
                 x.append(input('What do you want this to be changed for? '))
