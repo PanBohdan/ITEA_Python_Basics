@@ -1,6 +1,6 @@
 def insert(inp_list, inp_index, inp_str):
     inp_list = inp_list + ['temp']
-    if inp_index >= len(inp_list)-1:  # for indexes that larger than len of inp list
+    if inp_index >= len(inp_list)-1:
         inp_list[len(inp_list)-1] = inp_str  # insert at last index of list
         return inp_list
 
