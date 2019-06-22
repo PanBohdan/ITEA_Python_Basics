@@ -17,15 +17,18 @@ def telephone_directory(telephone_list):
             telephone_directory(telephone_list)
 
         elif inp == 2:  # searching name by phone or phone by name
-            search_phone_and_number(telephone_list)
+            inp = input('Enter phone or name you want to search ')
+            search_phone_and_number(telephone_list, inp)
             telephone_directory(telephone_list)
 
         elif inp == 3:  # removing phone and name by phone or name
-            remove_phone_and_name(telephone_list)
+            inp = input('Enter phone or name you want to remove ')
+            remove_phone_and_name(telephone_list, inp)
             telephone_directory(telephone_list)
 
         elif inp == 4:  # changing phone and name
-            change_phone_and_name(telephone_list)
+            inp = input('Enter phone or name you want to change ')
+            change_phone_and_name(telephone_list, inp)
             telephone_directory(telephone_list)
 
         elif inp == 5:  # searching how many phones have three numbers in a row
@@ -38,8 +41,7 @@ def telephone_directory(telephone_list):
         telephone_directory(telephone_list)
 
 
-def remove_phone_and_name(x):
-    inp = input('Enter phone or name you want to remove ')
+def remove_phone_and_name(x, inp):
     for i in x:
         if i.find(inp) >= 0:
             print('Do you want this phone and name to be removed? -',
@@ -55,8 +57,7 @@ def remove_phone_and_name(x):
                 break
 
 
-def change_phone_and_name(x):
-    inp = input('Enter phone or name you want to change ')
+def change_phone_and_name(x, inp):
     for i in x:
         if i.find(inp) >= 0:
             print('Do you want this phone and name to be changed? -',
@@ -86,8 +87,7 @@ def three_numbers_in_a_row(x):
     return same_numbers_counter
 
 
-def search_phone_and_number(x):
-    inp = input('Enter phone or name you want to search ')
+def search_phone_and_number(x, inp):
     for i in x:
         if i.find(inp) >= 0:
             print(i)
