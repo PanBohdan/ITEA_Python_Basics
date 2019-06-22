@@ -1,4 +1,4 @@
-def rectangle_maker(height, width):
+def print_rectangle(height, width):
     height = round(height)
     width = round(width)
     if height <= 0 or width <= 0:
@@ -9,4 +9,4 @@ def rectangle_maker(height, width):
 
 
 if __name__ == '__main__':
-    rectangle_maker(5, 13)
+    print_rectangle(5, 13)
