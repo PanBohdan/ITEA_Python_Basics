@@ -1,3 +1,6 @@
+# Как передать копию списка или словаря в функцию?
+
+
 def test_function(x):
     x.clear()
     return x
