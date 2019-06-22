@@ -1,10 +1,16 @@
+# Пользователь задает случайное число n.
+# Сгенерировать список этой длины и заполнить его 0 и 1 случайным образом.
+# Найти самую длинную цепочку из подряд идущих 0 или 1. Вывести эту длину.
+# Для какого максимального значения n, ваш алгоритм будет работать меньше чем 1 секунда?
+
+
 import random
 
 
 def number_of_zeros_and_ones_in_a_row(n):
     list_of_numbers = []
     number_of_numbers_in_a_row = 1
-    counter_of_nums_in_a_row = []
+    list_of_quantities_of_numbers_in_a_row = []
     for i in range(n):
         list_of_numbers.append(random.randint(0, 1))
     list_of_numbers.append(' ')
@@ -15,13 +21,13 @@ def number_of_zeros_and_ones_in_a_row(n):
             number_of_numbers_in_a_row += 1
 
         if list_of_numbers[i] != list_of_numbers[i+1]:
-            counter_of_nums_in_a_row.append(number_of_numbers_in_a_row)
+            list_of_quantities_of_numbers_in_a_row.append(number_of_numbers_in_a_row)
             number_of_numbers_in_a_row = 1
-    # print(counter_of_nums_in_a_row) # for testing
-    counter_of_nums_in_a_row.sort()
-    counter_of_nums_in_a_row.reverse()
-    # print(counter_of_nums_in_a_row) # for testing
-    return counter_of_nums_in_a_row[0]
+    # print(list_of_quantities_of_numbers_in_a_row) # for testing
+    list_of_quantities_of_numbers_in_a_row.sort()
+    list_of_quantities_of_numbers_in_a_row.reverse()
+    # print(list_of_quantities_of_numbers_in_a_row) # for testing
+    return list_of_quantities_of_numbers_in_a_row[0]
 
 
 def menu_function():
