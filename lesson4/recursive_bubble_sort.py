@@ -1,3 +1,6 @@
+# Напишите функцию, которая сортирует массив рекурсивно.
+
+
 def recursive_bubble_sort(numbers):
     for i in range(len(numbers) - 1):
         if numbers[i] > numbers[i + 1]:  # if next number is larger than swap

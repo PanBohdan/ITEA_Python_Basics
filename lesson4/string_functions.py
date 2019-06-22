@@ -1,3 +1,7 @@
+# Без использования методов строк, напишите реализацию таких методов строк:
+# replace, split, find. Напишите функцию remove по индексу и по подстроке.
+
+
 def find(inp_data, what_to_find):
     index = 0
     if what_to_find in inp_data:

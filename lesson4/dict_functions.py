@@ -1,3 +1,6 @@
+# Без использования методов словарей(кроме items), напишите  функцию remove по ключу и remove по значению
+
+
 def remove_with_key(inp_dict, key):
     if key in inp_dict:
         del inp_dict[key]

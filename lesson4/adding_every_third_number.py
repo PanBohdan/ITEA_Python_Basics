@@ -1,3 +1,6 @@
+# Разбить строку на группы по 3 числа и посчитать суммы каждого первого, второго и третьего
+
+
 def sum_every_third_number(inp, num_of_line):
     sum_of_nums = 0
     for i1 in range(num_of_line, len(inp), 3):

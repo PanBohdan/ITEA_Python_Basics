@@ -1,3 +1,6 @@
+# Без использования методов списков, напишите реализацию таких методов списков: insert, remove.
+
+
 def insert(inp_list, inp_index, inp_str):
     new_list = inp_list[:inp_index] + [inp_str] + inp_list[inp_index:]
     return new_list
