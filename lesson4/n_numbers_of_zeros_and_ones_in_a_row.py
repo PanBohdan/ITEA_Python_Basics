@@ -22,7 +22,9 @@ def number_of_zeros_and_ones_in_a_row(n):
             number_of_numbers_in_a_row += 1
 
         if list_of_numbers[i] != list_of_numbers[i+1]:
-            list_of_quantities_of_numbers_in_a_row.append(number_of_numbers_in_a_row)
+            list_of_quantities_of_numbers_in_a_row.append(
+                number_of_numbers_in_a_row
+            )
             number_of_numbers_in_a_row = 1
     # print(list_of_quantities_of_numbers_in_a_row) # for testing
     list_of_quantities_of_numbers_in_a_row.sort()
