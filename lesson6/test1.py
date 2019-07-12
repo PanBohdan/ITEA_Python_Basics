@@ -12,7 +12,8 @@ if __name__ == '__main__':
     place = 1
     final_str = ''
     for j in counter:
-        final_str += "on the {} place is '{}' with {} occurrences\n".format(place, j[0], j[1])
+        final_str += "on the {} place is '{}' with {} occurrences\n"\
+            .format(place, j[0], j[1])
         place += 1
     with open('test1_result.txt', 'w') as f:
         f.write(final_str)
