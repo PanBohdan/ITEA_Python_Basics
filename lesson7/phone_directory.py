@@ -76,7 +76,8 @@ def remove_by_name(inp_list):
     for i in inp_list:
         if i.name == name_to_remove:
             print(i.name, i.phone, i.info)
-            inp = input('Do you want this person to get removed? Yes-Y, No-N\n')
+            inp = input('Do you want this person to get removed? Yes-Y, No-N'
+                        '\n')
             if inp == 'Y':
                 inp_list.pop(index)
                 break
@@ -92,7 +93,8 @@ def remove_by_phone(inp_list):
     for i in inp_list:
         if i.phone == phone_to_remove:
             print(i.name, i.phone, i.info)
-            inp = input('Do you want this person to get removed? Yes-Y, No-N\n')
+            inp = input('Do you want this person to get removed? Yes-Y, No-N'
+                        '\n')
             if inp == 'Y':
                 inp_list.pop(index)
                 break
@@ -107,7 +109,8 @@ def change_name(inp_list):
     for i in inp_list:
         if i.name == name_to_change:
             print(i.name, i.phone, i.info)
-            inp = input('Do you want to change this person name? Yes-Y, No-N\n')
+            inp = input('Do you want to change this person name? Yes-Y, No-N'
+                        '\n')
             if inp == 'Y':
                 inp_name = input('Input new name: ')
                 i.change_name(inp_name)
@@ -118,7 +121,8 @@ def change_phone(inp_list):
     for i in inp_list:
         if i.phone == phone_to_change:
             print(i.name, i.phone, i.info)
-            inp = input('Do you want to change this person phone? Yes-Y, No-N\n')
+            inp = input('Do you want to change this person phone? Yes-Y, No-N'
+                        '\n')
             if inp == 'Y':
                 inp_phone = input('Input new phone: ')
                 i.change_phone(inp_phone)
@@ -129,7 +133,8 @@ def change_info(inp_list):
     for i in inp_list:
         if i.name == name_to_change:
             print(i.name, i.phone, i.info)
-            inp = input('Do you want to change this person info? Yes-Y, No-N\n')
+            inp = input('Do you want to change this person info? Yes-Y, No-N'
+                        '\n')
             if inp == 'Y':
                 inp_info = input('Input new info: ')
                 i.change_info(inp_info)
